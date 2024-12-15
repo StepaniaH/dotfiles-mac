@@ -4,7 +4,7 @@
 
 export EDITOR="nvim"
 export TERMINAL="kitty"
-export BROWSER="safari"
+export BROWSER="firefox"
 export PATH="$HOME/.local/bin":$PATH
 export PATH="$HOME/.docker/bin":$PATH
 export MANPAGER='nvim +Man!'
