@@ -1,0 +1,77 @@
+# Changing Window Focus
+
+# change window focus within space
+fn - j : yabai -m window --focus south
+fn - k : yabai -m window --focus north
+fn - l : yabai -m window --focus east
+fn - h : yabai -m window --focus west
+
+# change focus between external displays (left and right)
+fn - s : yabai -m display --focus north
+fn - g : yabai -m display --focus south
+
+
+# Modifying the Layout
+
+# rotate layout clockwise
+fn + shift - r : yabai -m space --rotate 270
+
+# flip along y-axis
+shift + fn - y : yabai -m space --mirror x-axis
+
+# flip along x-axis
+shift + fn - x : yabai -m space --mirror y-axis
+
+# toggle window float
+shift + fn - t : yabai -m window --toggle float --grib 4:4:1:1:2:2
+
+
+# Modifying Window Size
+
+# maximize a window
+shift + fn - m : yabai -m window --toggle zoom-fullscreen
+
+# balance out tree of windows (resize to occupy same area)
+shift + fn - e : yabai -m space --balance
+
+
+# Moving Windows Around
+
+# swap windows
+shift + fn - j : yabai -m window --swap south
+shift + fn - k : yabai -m window --swap north
+shift + fn - l : yabai -m window --swap east
+shift + fn - h : yabai -m window --swap west
+
+# move window and split   [May Be There Is A Conflict With The Below Command]
+ctrl + fn - j : yabai -m window --wrap south
+ctrl + fn - k : yabai -m window --wrap north
+ctrl + fn - l : yabai -m window --wrap east
+ctrl + fn - h : yabai -m window --wrap west
+
+# move window to display left and right    [May Be There Is A Conflict With The Below Command]
+shift + fn - s : yabai -m window --display west; yabai -m display --focus west;
+shift + fn - g : yabai -m window --display east; yabai -m display --focus east;
+
+# move window to prev and next display     [PROBLEM]   
+shift + fn - p : yabai -m window --space prev;
+shift + fn - n : yabai -m window --space next;
+
+# move window to space        [PROBLEM]
+shift + fn - 1 : yabai -m window --space 1;
+shift + fn - 2 : yabai -m window --space 2;
+shift + fn - 3 : yabai -m window --space 3;
+shift + fn - 4 : yabai -m window --space 4;
+shift + fn - 5 : yabai -m window --space 5;
+shift + fn - 6 : yabai -m window --space 6;
+shift + fn - 7 : yabai -m window --space 7;
+shift + fn - 8 : yabai -m window --space 8;
+shift + fn - 9 : yabai -m window --space 9;
+shift + fn - 0 : yabai -m window --space 10;
+
+
+# Start/Stopping Yabai
+
+# -- start/stop yabai --
+ctrl + fn - q : yabai --stop-service
+ctrl + fn - s : yabai --start-service
