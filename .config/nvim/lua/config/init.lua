@@ -1,4 +1,4 @@
 local g = vim.g
+
 g.mapleader = ' '
-g.maplocalleader = ' '
-g.have_nerd_font = false
+g.maplocalleader = '\\'
