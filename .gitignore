@@ -1,2 +1,6 @@
 .luarc.json
 lazy-lock.json
+
+.config/zsh/zim/
+
+.config/zsh/zim/.zcompdump*
