@@ -56,4 +56,6 @@ sudo /opt/homebrew/bin/yabai --load-sa
 
 echo "yabai configuration loaded.."
 
+yabai -m config external_bar all:$(sketchybar --query bar | jq .height):0
+# yabai -m config external_bar all:32:0
 borders active_color=0xccb0e2ff inactive_color=0xff414550 width=5.0 hidpi=off &
