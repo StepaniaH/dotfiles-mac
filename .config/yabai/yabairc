@@ -56,6 +56,15 @@ sudo /opt/homebrew/bin/yabai --load-sa
 
 echo "yabai configuration loaded.."
 
+# Adjust the size of yabi to suit the size of sketchybar
 yabai -m config external_bar all:$(sketchybar --query bar | jq .height):0
-# yabai -m config external_bar all:32:0
-borders active_color=0xccb0e2ff inactive_color=0xff414550 width=5.0 hidpi=off &
+
+########## Borders ##########
+options=(
+  style=round
+  width=6
+  hidpi=off
+  active_color=0xccb0e2ff
+  inactive_color=0xff414550
+)
+borders "${options[@]}" &
