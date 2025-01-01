@@ -8,3 +8,4 @@ alias g='lazygit'                                      # git gui Lazygit
 alias n='neofetch'                                     # show neofetch
 alias bu='brew update && brew upgrade && brew cleanup' # update brew and upgrade, cleanup
 alias vim='nvim', vi='nvim', v='nvim'                  # neovim 
+alias cal='calcurse'

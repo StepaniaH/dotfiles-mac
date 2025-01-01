@@ -6,3 +6,6 @@
 
 sketchybar --set "$NAME" label="$(date '+%d/%m %H:%M')"
 
+# sketchybar --add item clock right \
+#            --set clock update_freq=1 \
+#            --set clock script="date '+%H:%M'"
