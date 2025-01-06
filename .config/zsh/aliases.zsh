@@ -1,7 +1,7 @@
 # All aliases of zsh
 
 alias ls='ls -G'                                       # list with colors
-alias ll='ls -lah'                                     # list with colors and long format
+alias ll='eza -lah'                                     # list with colors and long format
 alias c='clear'                                        # clear terminal
 alias h='history'                                      # show history
 alias g='lazygit'                                      # git gui Lazygit

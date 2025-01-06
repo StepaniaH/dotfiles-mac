@@ -15,5 +15,9 @@ opt.relativenumber = true
 opt.list = true
 opt.listchars = {
   space = "·",
-  tab = "▸ "
+  tab = "▸ ",
+  nbsp = "␣",
+  trail = "·",
+  extends = "⟩",
+  precedes = "⟨",
 }

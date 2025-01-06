@@ -31,3 +31,5 @@ export STARSHIP_CONFIG=~/.config/zsh/starship.toml           # Starship Config
 eval "$(starship init zsh)"                              # Starship Init
 
 HISTFILE=~/.config/zsh/.zsh_hist                                     # Where to store zsh history
+
+export EZA_CONFIG_DIR="$HOME/.config/eza"
