@@ -1,22 +1,14 @@
-# 适用于【鼠须管】0.9.13+（请注意Squirrel 1.0 的 Breaking Changes）
-# 位置：~/Library/Rime/squirrel.custom.yaml
 patch:
-  #us_keyboard_layout: true                         # 键盘选项：应用美式键盘布局
-  #show_notifications_when: growl_is_running        # 状态通知，默认装有Growl时显示，全开(always)/全关(never)
 
   style:
-    inline_preedit: true                           # 非内嵌编码行
+    inline_preedit: true
 
-  # 预设的配色方案及代码（指定为 style/color_scheme 系统默认色系 - native）
-    color_scheme: catppuccin_latte                 # macos明亮主题
-    color_scheme_dark: catppuccin_macchiato        # macos黑暗主题
+    color_scheme: catppuccin_mocha                 # macos明亮主题
+    color_scheme_dark: catppuccin_mocha             # macos黑暗主题
 
-    #Squirrel 1.0 Breaking Changes: style/horizontal 即将废弃，1.0以上版本请使用 style/candidate_list_layout 和 style/text_orientation
-    #horizontal: false                               # 候选窗是否横向显示：true横排，false竖排（Squirrel 1.0起使用新的UI配置）
     candidate_list_layout: stacked                  # 候选框样式，默认stacked，水平线型(linear)/垂直堆叠（stacked）
-    #text_orientation: horizontal                   # 候选框文字方向，默认horizontal，横排自左至右(horizontal)/竖排自右至左(vertical)
 
-    candidate_format: "%c %@ "                     # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
+    candidate_format: "%c. %@ "                    # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
     corner_radius: 6                               # 窗口圆角
     hilited_corner_radius: 5                       # 高亮圆角
     line_spacing: 10                               # 行间距(适用于竖排)
