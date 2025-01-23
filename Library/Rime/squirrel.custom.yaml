@@ -13,7 +13,7 @@ patch:
 
     #Squirrel 1.0 Breaking Changes: style/horizontal 即将废弃，1.0以上版本请使用 style/candidate_list_layout 和 style/text_orientation
     #horizontal: false                               # 候选窗是否横向显示：true横排，false竖排（Squirrel 1.0起使用新的UI配置）
-    candidate_list_layout: linear                  # 候选框样式，默认stacked，水平线型(linear)/垂直堆叠（stacked）
+    candidate_list_layout: stacked                  # 候选框样式，默认stacked，水平线型(linear)/垂直堆叠（stacked）
     #text_orientation: horizontal                   # 候选框文字方向，默认horizontal，横排自左至右(horizontal)/竖排自右至左(vertical)
 
     candidate_format: "%c %@ "                     # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
