@@ -2,7 +2,9 @@ return {
   {
     "neovim/nvim-lspconfig",
     enable = false,
-    dependencies = {},
+    dependencies = {
+      { "saghen/blink.cmp" },
+    },
     config = function()
       -- Lua language serve
       require('lspconfig').lua_ls.setup({
@@ -14,6 +16,10 @@ return {
           }
         }
       })
+      -- C language serve
+      require('lspconfig').clangd.setup {}
+      -- Python language serve
+      require('lspconfig').pyright.setup {}
 
       -- Auto formatting when save
       vim.api.nvim_create_autocmd('LspAttach', {
