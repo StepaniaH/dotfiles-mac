@@ -10,3 +10,5 @@ alias bu='brew update && brew upgrade && brew cleanup' # update brew and upgrade
 alias vim='nvim', vi='nvim', v='nvim'                  # neovim 
 alias cal='calcurse'                                   # calcurse
 alias news='newsboat'                                  # newsboat
+alias python='python3'                                 # python3
+alias pip='pip3'
