@@ -6,6 +6,7 @@ return {
       { "saghen/blink.cmp" },
     },
     config = function()
+      local capabilities = require('blink.cmp').get_lsp_capabilities()
       -- Lua language serve
       require('lspconfig').lua_ls.setup({
         settings = {
@@ -14,12 +15,13 @@ return {
               globals = { 'vim' }
             }
           }
-        }
+        },
+        capabilities = capabilities,
       })
       -- C language serve
-      require('lspconfig').clangd.setup {}
+      require('lspconfig').clangd.setup { capabilities = capabilities }
       -- Python language serve
-      require('lspconfig').pyright.setup {}
+      require('lspconfig').pyright.setup { capabilities = capabilities }
 
       -- Auto formatting when save
       vim.api.nvim_create_autocmd('LspAttach', {
