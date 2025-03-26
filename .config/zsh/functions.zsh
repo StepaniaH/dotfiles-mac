@@ -10,3 +10,8 @@ function y() {
 	fi
 	rm -f -- "$tmp"
 }
+
+# Add rss feed to newsboat
+function addrss() {
+  echo "$1" >> ~/.config/newsboat/urls
+}
