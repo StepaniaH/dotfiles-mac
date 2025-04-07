@@ -17,6 +17,7 @@
 
 ;; Add lisp directory to load path
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
+(require 'init-benchmarking) ;; Measure startup time
 
 ;l; Constants
 (defconst *spell-check-support-enable* nil) ;; Enable with t if you prefer
